@@ -9,13 +9,13 @@ def is_enabled(value, default):
         return default
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID", 29013102))
-API_HASH = os.environ.get("API_HASH", '6525d7b0bbda6e9369db2ee3c7cf7e09')
-BOT_TOKEN = os.environ.get("BOT_TOKEN", '5651556643:AAGMIUjdIIe7PhOsX641t2t13JzcRT05I_U')
+API_ID = int(os.environ.get("API_ID", 26726762))
+API_HASH = os.environ.get("API_HASH", '04c1514942a1fa624c461d1b0d61b85a')
+BOT_TOKEN = os.environ.get("BOT_TOKEN", '6216302557:AAG4zoRcnCAwewebDPfeW0cvIU8eBdZ5Vdc')
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
-OWNER_ID = int(os.environ.get("OWNER_ID", "5232827456"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1252654109"))
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Shortener")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://krownlinks:DpQJbwSgU1p2T2KC@cluster0.9q7q0qj.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://notixpedia:acsG5ktrHm8O5TSg@cluster0.xbnalnw.mongodb.net/?retryWrites=true&w=majority")
 # Optionnal variables
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False)
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
